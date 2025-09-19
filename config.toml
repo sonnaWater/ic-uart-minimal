@@ -1,0 +1,291 @@
+# 🧠 AI深度強化學習與量化交易學習平台配置文件
+# Configuration File for AI-Powered Quantitative Trading Learning Platform
+
+[project]
+name = "ai-quant-trading-platform"
+version = "1.0.0"
+description = "專業的AI深度強化學習與量化交易學習平台"
+authors = ["AI量化交易專家學習平台"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/sonnaWater/ic-uart-minimal"
+repository = "https://github.com/sonnaWater/ic-uart-minimal"
+
+[learning_paths]
+# 🎯 學習路徑配置
+
+[learning_paths.foundation]
+name = "基礎建構期"
+duration_months = 3
+topics = [
+    "數學基礎：線性代數、統計學、微積分",
+    "程式語言：Python、C++、R",
+    "金融基礎：市場結構、金融工具",
+    "數據處理：Pandas、NumPy、數據清理"
+]
+
+[learning_paths.ai_core]
+name = "AI技術核心期"
+duration_months = 3
+topics = [
+    "機器學習：監督、無監督、半監督學習",
+    "深度學習：神經網路、CNN、RNN、Transformer",
+    "強化學習：MDP、Q-Learning、策略梯度",
+    "模型評估：交叉驗證、超參數調優"
+]
+
+[learning_paths.reinforcement_learning]
+name = "強化學習專精期"
+duration_months = 3
+topics = [
+    "RL理論：馬可夫決策過程、貝爾曼方程",
+    "價值函數：Q-Learning、SARSA、TD學習",
+    "策略梯度：REINFORCE、Actor-Critic、PPO",
+    "深度RL：DQN、A3C、SAC、TD3"
+]
+
+[learning_paths.quantitative_trading]
+name = "量化交易應用期"
+duration_months = 3
+topics = [
+    "市場理論：有效市場假說、行為金融學",
+    "策略開發：趨勢跟隨、均值回歸、動量策略",
+    "風險管理：VaR、回撤控制、倉位管理",
+    "回測系統：歷史模擬、蒙地卡羅、壓力測試"
+]
+
+[technology_stack]
+# 🛠️ 技術棧配置
+
+[technology_stack.languages]
+primary = "Python"
+secondary = ["C++", "R", "Julia", "SQL"]
+scripting = ["Bash", "PowerShell"]
+
+[technology_stack.frameworks]
+deep_learning = ["PyTorch", "TensorFlow", "JAX"]
+ml_traditional = ["scikit-learn", "XGBoost", "LightGBM"]
+reinforcement_learning = ["Stable-Baselines3", "Ray RLlib", "TianShou"]
+backtesting = ["Backtrader", "Zipline", "VectorBT"]
+
+[technology_stack.data_tools]
+processing = ["Pandas", "NumPy", "Dask"]
+visualization = ["Matplotlib", "Plotly", "Seaborn"]
+databases = ["PostgreSQL", "MongoDB", "Redis", "InfluxDB"]
+apis = ["Alpha Vantage", "Yahoo Finance", "Quandl"]
+
+[technology_stack.deployment]
+containers = ["Docker", "Kubernetes"]
+cloud = ["AWS", "Google Cloud", "Azure"]
+monitoring = ["Prometheus", "Grafana", "ELK Stack"]
+
+[strategies]
+# 📈 交易策略配置
+
+[strategies.trend_following]
+name = "趨勢跟隨策略"
+description = "基於移動平均線交叉的趨勢跟隨系統"
+parameters = {
+    short_window = 20,
+    long_window = 50,
+    stop_loss = 0.02,
+    take_profit = 0.06
+}
+
+[strategies.mean_reversion]
+name = "均值回歸策略"
+description = "基於布林帶的均值回歸交易系統"
+parameters = {
+    window = 20,
+    num_std = 2.0,
+    holding_period = 5,
+    min_return = 0.01
+}
+
+[strategies.momentum]
+name = "動量策略"
+description = "基於價格動量的趨勢跟隨策略"
+parameters = {
+    lookback_period = 12,
+    holding_period = 1,
+    momentum_threshold = 0.02
+}
+
+[strategies.reinforcement_learning]
+name = "強化學習策略"
+description = "基於DQN的自適應交易策略"
+parameters = {
+    state_size = 10,
+    action_size = 3,
+    learning_rate = 0.001,
+    epsilon_decay = 0.995,
+    memory_size = 10000
+}
+
+[backtesting]
+# 🔍 回測配置
+
+[backtesting.default]
+initial_capital = 100000
+commission = 0.001
+slippage = 0.0005
+benchmark = "SPY"
+start_date = "2020-01-01"
+end_date = "2024-01-01"
+
+[backtesting.risk_metrics]
+required_metrics = [
+    "總收益率",
+    "年化收益率", 
+    "夏普比率",
+    "索提諾比率",
+    "最大回撤",
+    "勝率",
+    "平均盈虧比"
+]
+
+[backtesting.validation]
+walk_forward_periods = 12
+monte_carlo_simulations = 1000
+out_of_sample_ratio = 0.2
+
+[data_sources]
+# 📊 數據源配置
+
+[data_sources.market_data]
+primary = "yahoo_finance"
+secondary = ["alpha_vantage", "quandl", "tushare"]
+update_frequency = "daily"
+storage_format = "parquet"
+
+[data_sources.alternative_data]
+news_sentiment = "newsapi"
+social_media = "twitter_api"
+economic_indicators = "fred_api"
+options_data = "cboe"
+
+[risk_management]
+# 🛡️ 風險管理配置
+
+[risk_management.position_sizing]
+method = "kelly_criterion"
+max_position_size = 0.1
+max_portfolio_risk = 0.02
+
+[risk_management.stop_loss]
+method = "trailing_stop"
+initial_stop = 0.02
+trailing_distance = 0.01
+
+[risk_management.portfolio_limits]
+max_correlation = 0.7
+max_sector_exposure = 0.3
+max_single_position = 0.05
+
+[development]
+# 🔧 開發環境配置
+
+[development.coding_standards]
+formatter = "black"
+linter = "flake8"
+type_checker = "mypy"
+import_sorter = "isort"
+
+[development.testing]
+framework = "pytest"
+coverage_threshold = 0.8
+property_testing = "hypothesis"
+
+[development.version_control]
+main_branch = "main"
+feature_prefix = "feature/"
+release_prefix = "release/"
+
+[deployment]
+# 🚀 部署配置
+
+[deployment.staging]
+environment = "staging"
+auto_deploy = true
+run_tests = true
+
+[deployment.production]
+environment = "production"
+auto_deploy = false
+approval_required = true
+rollback_enabled = true
+
+[monitoring]
+# 📊 監控配置
+
+[monitoring.performance]
+metrics = ["latency", "throughput", "error_rate"]
+alerting_threshold = {
+    latency_ms = 100,
+    error_rate_percent = 1.0
+}
+
+[monitoring.trading]
+metrics = ["pnl", "drawdown", "sharpe_ratio", "trades_per_day"]
+daily_reports = true
+alert_conditions = {
+    max_drawdown_percent = 5.0,
+    min_sharpe_ratio = 1.0
+}
+
+[logging]
+# 📝 日誌配置
+
+[logging.levels]
+default = "INFO"
+trading = "DEBUG"
+backtesting = "INFO"
+risk_management = "WARNING"
+
+[logging.format]
+pattern = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"
+rotation = "1 week"
+retention = "1 month"
+
+[ai_models]
+# 🧠 AI模型配置
+
+[ai_models.dqn]
+network_architecture = ["Dense(128)", "ReLU", "Dropout(0.3)", "Dense(128)", "ReLU", "Dense(3)"]
+optimizer = "Adam"
+learning_rate = 0.001
+batch_size = 32
+target_update_frequency = 100
+
+[ai_models.ppo]
+policy_network = ["Dense(64)", "Tanh", "Dense(64)", "Tanh", "Dense(3)"]
+value_network = ["Dense(64)", "Tanh", "Dense(64)", "Tanh", "Dense(1)"]
+clip_ratio = 0.2
+gae_lambda = 0.95
+
+[education]
+# 🎓 教育配置
+
+[education.assessment]
+quiz_frequency = "weekly"
+project_frequency = "monthly"
+peer_review = true
+
+[education.resources]
+required_books = [
+    "Reinforcement Learning: An Introduction - Sutton & Barto",
+    "Quantitative Trading - Ernest Chan",
+    "Machine Learning for Asset Managers - Marcos López de Prado"
+]
+
+recommended_courses = [
+    "CS285 Deep Reinforcement Learning - UC Berkeley",
+    "CS229 Machine Learning - Stanford", 
+    "Financial Engineering - Stanford"
+]
+
+[education.milestones]
+month_3 = "完成基礎數學與程式設計"
+month_6 = "實現第一個強化學習模型"
+month_9 = "開發完整交易策略"
+month_12 = "建立可商業化的交易系統"
